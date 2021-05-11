@@ -64,11 +64,11 @@ ROOT_URLCONF = 'todobackend.urls'
 
 # Disables the browsable API
 """Remember to Enable it in Production"""
-# REST_FRAMEWORK = {
-#     'DEFAULT_RENDERER_CLASSES': (
-#         'rest_framework.renderers.JSONRenderer',
-#     )
-# }
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    )
+}
 
 TEMPLATES = [
     {
@@ -148,5 +148,6 @@ STATICFILES_DIRS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://todo-app-react-django.herokuapp.com"
 ]
